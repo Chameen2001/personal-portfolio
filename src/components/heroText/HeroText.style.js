@@ -3,18 +3,19 @@ import styled from "styled-components";
 
 export const DownloadCVButton = styled.button`
     border: none;
-    width: 150px;
-    height: 50px;
+    width: 10em;
+    height: 3em;
     border-radius: 5px;
-    background-color: #aa85c9;
+    background-color: #8e81db;
     transition: all 400ms;
     margin: 1.5rem 0 0 0;
     font-family: Roboto;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.8em;
+    color: white;
 
     :hover{
-        background-color: #a472cf;
+        background-color: #7462df;
         transition: all 400ms;
         cursor: pointer;
     }
@@ -22,7 +23,7 @@ export const DownloadCVButton = styled.button`
 
 
 export const SocialIconLinks = styled.a`
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: #86a7b8;
    :hover{
     color: #2980b9;
@@ -43,17 +44,18 @@ export const H2 = styled.h2`
 
 export const H1 = styled.h1`
     text-transform: uppercase;
-    font-size: 3.3rem;
-    line-height: 6rem;
+    font-size: 4em;
+    line-height: 1.5em;
+    color: #0d374d;
 `
 
 export const Ul = styled.ul`
     list-style: none;
     padding: 0;
-    margin: 3rem 0 0 0;
+    margin: 3em 0 0 0;
 `
 
 export const Li = styled.li`
     display: inline-block;
-    margin: 0 1rem 0 0;
+    margin: 0 1em 0 0;
 `

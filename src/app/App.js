@@ -1,13 +1,19 @@
+import { Fragment } from "react";
 import Header from "../components/header/Header";
 import Home from "../pages/home/Home";
-import { Apps } from "./App.style";
+import { HomeBannerArea, Wrapper } from "./App.style";
 
 function App() {
   return (
-    <Apps>
-      <Header/>
-      <Home />
-    </Apps>
+    <Fragment>
+      <HomeBannerArea>
+        <Wrapper>
+          <Header/>
+          <Home/>
+        </Wrapper>
+      </HomeBannerArea>
+      
+    </Fragment>
   );
 }
 
