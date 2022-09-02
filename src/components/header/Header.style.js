@@ -4,6 +4,12 @@ import Grid from "@mui/material/Grid";
 export const MainGrid = styled(Grid)`
      position: absolute;
      height: 10vh;
+     @media (max-width: 900px) {
+    box-shadow: 0px 10px 10px -10px;
+  }
+`
+export const SubGrid = styled(Grid)`
+  
 `
 
 export const Ul=styled.ul`
@@ -15,6 +21,11 @@ export const Ul=styled.ul`
     font-size: 0.83em;
     font-weight: bold;
     padding: 0;
+
+    @media (max-width: 900px) {
+    display: none;
+  }
+    
 `
 
 export const ListItem=styled.li`
@@ -32,3 +43,17 @@ export const ListItem=styled.li`
 export const MainLogo=styled.img`
    width: 9em;
 `
+
+export const MenuIcon  = styled.a`
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: black;
+  transform: rotate(0deg);
+  transition: all 500ms;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;

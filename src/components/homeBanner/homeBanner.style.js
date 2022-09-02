@@ -6,7 +6,9 @@ export const MainBanner = styled(Grid)`
   height: 100%;
 `;
 
+export const SubBanner = styled(Grid)`
 
+`;
 
 export const MyImage = styled.div`
   width: 635px;
@@ -23,5 +25,21 @@ export const MyImage = styled.div`
   @media (max-width: 1440px) {
     width: 340px;
     height: 650px;
+  }
+
+  @media (max-width: 768px) {
+    background-image: none;
+    width: initial;
+    height: initial;
+  }
+  
+`;
+
+export const ImageGrid = styled(Grid)`
+  height: 100%;
+
+  @media (max-width: 768px) {
+    height: initial;
+    width: initial !important;
   }
 `;

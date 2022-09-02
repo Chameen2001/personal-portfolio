@@ -9,23 +9,42 @@ export const Wrapper = styled.div`
   height: 100%;
 
   @media (max-width: 2560px) {
-    width: 1980px;
+    /* width: 1980px; */
     font-size: 25px;
   }
 
   @media (max-width: 1980px) {
-    width: 1440px;
+    /* width: 1440px; */
     font-size: 17px;
   }
 
   @media (max-width: 1440px) {
-    width: 1100px;
+    /* width: 1100px; */
     font-size: 13px;
   }
 
   @media (max-width: 1024px) {
-    width: 860px;
+    /* width: 860px; */
     font-size: 13px;
+  }
+
+  @media (max-width: 768px) {
+    /* width: 650px; */
+    font-size: 13px;
+  }
+
+  @media (max-width: 425px) {
+    /* width: 650px; */
+    font-size: 10px;
+  }
+  @media (max-width: 375px) {
+    /* width: 650px; */
+    font-size: 8px;
+  }
+
+  @media (max-width: 320px) {
+    /* width: 650px; */
+    font-size: 7px;
   }
 `;
 
