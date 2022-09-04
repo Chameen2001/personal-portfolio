@@ -4,7 +4,7 @@ import myImage from "../../assets/images/profile-pic.png";
 
 export const Frame = styled.div`
   position: relative;
-  width: 80%;
+  width: 75%;
   height: 60%;
   border: 20px solid #7462df;
 `;
@@ -16,11 +16,11 @@ export const MainGrid = styled(Grid)`
 export const MyImage = styled.div`
   top: 0;
   bottom: 0;
-  right: -160px;
+  right: -185px;
   margin: auto;
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   background-image: url(${myImage});
   background-size: cover;
   background-position: center;
@@ -35,4 +35,5 @@ export const H2 = styled.h2`
 export const H6 = styled.h4`
   font-weight: lighter;
   line-height: 1.5em;
+  opacity: 80%;
 `;

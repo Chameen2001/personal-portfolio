@@ -10,30 +10,31 @@ class Header extends Component {
     super(props);
     this.state = {
       items: [
-        <ListItem style={{ color: " #efb7e0" }}>Home</ListItem>,
+        <ListItem style={{ color: " #7462df" }}>Home</ListItem>,
         <ListItem>about</ListItem>,
         <ListItem>project</ListItem>,
         <ListItem>assignment</ListItem>,
         <ListItem>education</ListItem>,
         <ListItem>skill</ListItem>,
         <ListItem>contact me</ListItem>,
-      ]
+      ],
+      color: { backgroundColor: "transparent" }
     }
   }
 
-  changeBackground = () => {
+  changeActiveMenu = () => {
     console.log(window.scrollY);
     if (window.scrollY >= 530) {
       let items = this.state.items;
       items[0] = <ListItem >Home</ListItem>;
-      items[1] = <ListItem style={{ color: " #efb7e0" }}>about</ListItem>;
+      items[1] = <ListItem style={{ color: " #7462df" }}>about</ListItem>;
       this.setState({
         items
       })
     }
     if (window.scrollY <= 1) {
       let items = this.state.items;
-      items[0] = <ListItem style={{ color: " #efb7e0" }}>Home</ListItem>;
+      items[0] = <ListItem style={{ color: " #7462df" }}>Home</ListItem>;
       items[1] = <ListItem>about</ListItem>;
       this.setState({
         items
@@ -41,14 +42,30 @@ class Header extends Component {
     }
   }
 
+  changeHeaderColor = () => {
+
+    if (window.scrollY < 126) {
+      this.setState({
+        color: { backgroundColor: "transparent" }
+      })
+    }
+
+    if (window.scrollY > 126) {
+      this.setState({
+        color: { backgroundColor: "#d2dae2" }
+      })
+    }
+  }
+
   render() {
 
-    window.addEventListener('scroll', this.changeBackground);
+    window.addEventListener('scroll', this.changeActiveMenu);
+    window.addEventListener('scroll', this.changeHeaderColor);
 
 
 
     return (
-      <MainGrid container justifyContent="center">
+      <MainGrid container justifyContent="center" style={this.state.color}>
         <SubGrid container xl={10} lg={10} md={10} sm={10} xs={10}>
           <Grid container xl={3} md={3} xs={6} alignItems="center">
             <Grid item><MainLogo src={logo} alt="" /></Grid>
@@ -65,7 +82,7 @@ class Header extends Component {
           </Grid>
           <Grid item xl={3} md={3} xs={0}></Grid>
         </SubGrid>
-      </MainGrid>
+      </MainGrid >
     );
   }
 }

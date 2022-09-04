@@ -2,8 +2,10 @@ import styled from "styled-components";
 import Grid from "@mui/material/Grid";
 
 export const MainGrid = styled(Grid)`
+  z-index: 1;
   position: fixed;
   height: 10vh;
+  transition: all 1000ms;
   @media (max-width: 900px) {
     box-shadow: 0px 10px 10px -10px;
   }

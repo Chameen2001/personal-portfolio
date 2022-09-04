@@ -2,8 +2,14 @@ import { Component } from "react";
 import Grid from "@mui/material/Grid";
 import HeroText from "../heroText/HeroText";
 import { MainBanner, MyImage, ImageGrid, SubBanner } from "./homeBanner.style";
-
+import AOS from "aos";
+import 'aos/dist/aos.css'
 class HomeBanner extends Component {
+
+    componentDidMount() {
+        AOS.init({ duration: 1000 });
+    }
+
     render() {
         return (
             <MainBanner container justifyContent="center">
@@ -16,8 +22,8 @@ class HomeBanner extends Component {
                     xs={10}
                     alignItems="center"
                 >
-                    <Grid xl={7} lg={7} md={7} sm={12} container>
-                        <HeroText />
+                    <Grid xl={7} lg={7} md={7} sm={12} container data-aos="fade-up">
+                        < HeroText />
                     </Grid>
                     <ImageGrid
                         container
@@ -27,6 +33,7 @@ class HomeBanner extends Component {
                         sm={0}
                         justifyContent="center"
                         alignItems="flex-end"
+                        data-aos="fade-down"
                     >
                         <MyImage />
                     </ImageGrid>
