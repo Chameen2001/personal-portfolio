@@ -1,14 +1,12 @@
 import { Grid } from "@mui/material";
 import styled from "styled-components";
-import myImage from "../../assets/images/MyImage.png";
+import myImage from "../../assets/images/MyImage-black.png";
 
 export const MainBanner = styled(Grid)`
   height: 100%;
 `;
 
-export const SubBanner = styled(Grid)`
-
-`;
+export const SubBanner = styled(Grid)``;
 
 export const MyImage = styled.div`
   width: 635px;
@@ -16,7 +14,7 @@ export const MyImage = styled.div`
   background-image: url(${myImage});
   background-size: cover;
   background-position: center;
-  
+
   @media (max-width: 1980px) {
     width: 420px;
     height: 800px;
@@ -32,7 +30,6 @@ export const MyImage = styled.div`
     width: initial;
     height: initial;
   }
-  
 `;
 
 export const ImageGrid = styled(Grid)`

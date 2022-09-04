@@ -1,13 +1,13 @@
 import { Grid } from "@mui/material";
 import { Frame, H2, H6, MainGrid, MyImage } from "./About.style";
-import AOS from "aos";
+import AOS1 from "aos";
 import 'aos/dist/aos.css'
 
 const { Component, Fragment } = require("react");
 
 class About extends Component {
     componentDidMount() {
-        AOS.init({ duration: 1000 });
+
     }
     render() {
         return (

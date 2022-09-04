@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'
 class HomeBanner extends Component {
 
     componentDidMount() {
-        AOS.init({ duration: 1000 });
+        AOS.init({ duration: 1500 });
     }
 
     render() {
