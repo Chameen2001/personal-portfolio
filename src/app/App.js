@@ -22,6 +22,7 @@ import {
   ZoomOut,
 } from "react-scroll-motion";
 import Project from "../pages/project/Project";
+import MyExperience from "../pages/my-experience/MyExperience";
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
             <Header />
             <Home />
             <About />
-            <Project/>
+            <MyExperience />
+            <Project />
           </Wrapper>
         </HomeBannerArea>
       </Fragment>

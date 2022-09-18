@@ -6,7 +6,9 @@ export const MainBanner = styled(Grid)`
   height: 100%;
 `;
 
-export const SubBanner = styled(Grid)``;
+export const SubBanner = styled(Grid)`
+  
+`;
 
 export const MyImage = styled.div`
   width: 635px;
@@ -25,21 +27,41 @@ export const MyImage = styled.div`
     height: 650px;
   }
 
+  @media (max-width: 1024px) {
+    width: 340px;
+    height: 650px;
+  }
+
   @media (max-width: 768px) {
     background-image: none;
     width: initial;
     height: initial;
   }
 
-  @media (max-height: 1430px) and (min-width: 2050px) {
+  /* @media (max-width: 2220px) and (max-height: 1350px) {
     height: 1024px;
     width: 510px;
   }
 
-  @media (max-height: 1190px) and (min-width: 1980px) {
-    height: 900px;
-    width: 480px;
+  @media (max-width: 1920px) and (max-height: 1080px) {
+    height: 860px;
+    width: 460px;
   }
+
+  @media (max-width: 1870px) and (max-height: 1220px) {
+    height: 860px;
+    width: 460px;
+  }
+
+  @media (max-width: 1520px) and (max-height: 1050px) {
+    height: 750px;
+    width: 400px;
+  }
+
+  @media (max-width: 1250px) and (max-height: 920px) {
+    height: 560px;
+    width: 300px;
+  } */
 `;
 
 export const ImageGrid = styled(Grid)`
