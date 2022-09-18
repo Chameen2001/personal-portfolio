@@ -11,7 +11,7 @@ export const Frame = styled.div`
 
 export const MainGrid = styled(Grid)`
   height: 100vh;
-`;
+`;  
 
 export const MyImage = styled.div`
   top: 0;

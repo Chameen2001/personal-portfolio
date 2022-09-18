@@ -21,6 +21,7 @@ import {
   ZoomIn,
   ZoomOut,
 } from "react-scroll-motion";
+import Project from "../pages/project/Project";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Header />
             <Home />
             <About />
+            <Project/>
           </Wrapper>
         </HomeBannerArea>
       </Fragment>

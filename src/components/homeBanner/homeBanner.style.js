@@ -30,6 +30,16 @@ export const MyImage = styled.div`
     width: initial;
     height: initial;
   }
+
+  @media (max-height: 1430px) and (min-width: 2050px) {
+    height: 1024px;
+    width: 510px;
+  }
+
+  @media (max-height: 1190px) and (min-width: 1980px) {
+    height: 900px;
+    width: 480px;
+  }
 `;
 
 export const ImageGrid = styled(Grid)`

@@ -13,6 +13,16 @@ export const Wrapper = styled.div`
     font-size: 25px;
   }
 
+  @media (max-width: 2400px) {
+    /* width: 1980px; */
+    font-size: 22px;
+  }
+
+  @media (max-width: 2050px) {
+    /* width: 1980px; */
+    font-size: 20px;
+  }
+
   @media (max-width: 1980px) {
     /* width: 1440px; */
     font-size: 17px;
