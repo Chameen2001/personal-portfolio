@@ -7,7 +7,7 @@ import { HiOutlineMenu } from 'react-icons/hi'
 export default function Header() {
 
   const [items, setItems] = useState([
-    <ListItem style={{ color: " #7462df" }}>Home</ListItem>,
+    <ListItem style={{ color: " #9fb9b6ff" }}>Home</ListItem>,
     <ListItem>about</ListItem>,
     <ListItem>project</ListItem>,
     <ListItem>assignment</ListItem>,
@@ -22,12 +22,12 @@ export default function Header() {
     if (window.scrollY >= 530) {
       let copyItems = items;
       copyItems[0] = <ListItem >Home</ListItem>;
-      copyItems[1] = <ListItem style={{ color: " #7462df" }}>about</ListItem>;
+      copyItems[1] = <ListItem style={{ color: " #9fb9b6ff" }}>about</ListItem>;
       setItems(copyItems);
     }
     if (window.scrollY <= 1) {
       let copyItems = items;
-      copyItems[0] = <ListItem style={{ color: " #7462df" }}>Home</ListItem>;
+      copyItems[0] = <ListItem style={{ color: " #9fb9b6ff" }}>Home</ListItem>;
       copyItems[1] = <ListItem>about</ListItem>;
       setItems(copyItems);
     }
@@ -40,7 +40,7 @@ export default function Header() {
     }
 
     if (window.scrollY > 126) {
-      setColor({ backgroundColor: "#d2dae2" });
+      setColor({ backgroundColor: "white" });
     }
   }
 

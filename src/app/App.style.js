@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import backImg from "../assets/images/Background.png";
+import backImg from "../assets/images/image2097.png";
 
 export const Wrapper = styled.div`
   position: absolute;

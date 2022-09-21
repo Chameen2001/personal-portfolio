@@ -5,7 +5,7 @@ export const DownloadCVButton = styled.button`
   width: 10em;
   height: 3em;
   border-radius: 5px;
-  background-color: #8e81db;
+  background-color: #9fb9b6ff;
   transition: all 400ms;
   margin: 1.5rem 0 0 0;
   font-family: Roboto;

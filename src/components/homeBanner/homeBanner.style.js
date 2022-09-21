@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import styled from "styled-components";
-import myImage from "../../assets/images/MyImage-black.png";
+import myImage from "../../assets/images/MyImage.png";
 
 export const MainBanner = styled(Grid)`
   height: 100%;

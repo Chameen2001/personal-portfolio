@@ -6,7 +6,7 @@ export const Frame = styled.div`
   position: relative;
   width: 75%;
   height: 60%;
-  border: 20px solid #7462df;
+  border: 20px solid #353e3bff;
 `;
 
 export const MainGrid = styled(Grid)`
