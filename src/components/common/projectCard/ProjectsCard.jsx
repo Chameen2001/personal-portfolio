@@ -6,7 +6,7 @@ import useImage from '../useImage/UseImage'
 export default function ProjectsCard(props) {
     const { loading, error, image } = useImage(props.image);
     return (
-        <Card id="inner" style={{backgroundImage: `url(${image})`,backgroundPosition:"center",backgroundSize:"contain"}}>
+        <Card id="inner" style={{backgroundImage: `url(${image})`,backgroundPosition:"center",backgroundSize:"cover"}}>
             <Footer>
                 <Connections>
                     <Connection><Icon href='https://github.com/Chameen2001'><AiOutlineGithub /></Icon></Connection>

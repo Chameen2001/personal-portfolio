@@ -9,7 +9,7 @@ import 'aos/dist/aos.css'
 export default function HomeBanner() {
 
     useEffect(() => {
-        AOS.init({ duration: 1500 });
+        AOS.init({ duration: 800 });
       });
     
 

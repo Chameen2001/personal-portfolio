@@ -32,6 +32,17 @@ export const MyImage = styled.div`
     height: 650px;
   }
 
+  @media (max-width: 1024px) and (max-height: 600px) {
+    width: 250px;
+    height: 480px;
+  }
+
+  @media (max-width: 820px) {
+    background-image: none;
+    width: initial;
+    height: initial;
+  }
+
   @media (max-width: 768px) {
     background-image: none;
     width: initial;
@@ -66,6 +77,11 @@ export const MyImage = styled.div`
 
 export const ImageGrid = styled(Grid)`
   height: 100%;
+
+  @media (max-width: 820px) {
+    height: initial;
+    width: initial !important;
+  }
 
   @media (max-width: 768px) {
     height: initial;

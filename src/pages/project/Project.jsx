@@ -23,12 +23,16 @@ export default function Project() {
                                 <ProjectCard>
                                     <ProjectsCard title="Car rental system" description="Car rental system using spring" image="posSystem.png" />
                                 </ProjectCard>
-                                <ProjectCard />
+                                <ProjectCard>
+                                    <ProjectsCard title="Courier Management System" description="Courier management system for company named 'Orel' using JavaFX / Java / Layered architecture / Jasper Reports" image="orel.png" />
+                                </ProjectCard>
                             </Grid>
                         </ProjectRow>
                         <ProjectRow item xl={8} xs={8}>
                             <Grid container display="row" justifyContent="space-around" alignItems="center">
-                                <ProjectCard />
+                                <ProjectCard>
+                                    <ProjectsCard title="Student management system for IJSE" description="Student management system using hibernate technology" image="orm.png" />
+                                </ProjectCard>
                                 <ProjectCard />
                                 <ProjectCard />
                             </Grid>

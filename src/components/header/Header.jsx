@@ -53,7 +53,7 @@ export default function Header() {
         <Grid container xl={3} md={3} xs={6} alignItems="center">
           <Grid item><MainLogo src={logo} alt="" /></Grid>
         </Grid>
-        <Grid container xl={6} md={6} xs={6} justifyContent="right" alignItems="center">
+        <Grid container xl={6} lg={6} md={8} xs={6} justifyContent="right" alignItems="center">
           <Ul>
             {
               items.map((item) => {
@@ -63,7 +63,7 @@ export default function Header() {
           </Ul>
           <MenuIcon><HiOutlineMenu /></MenuIcon>
         </Grid>
-        <Grid item xl={3} md={3} xs={0}></Grid>
+        <Grid item xl={3} lg={3} md={1} xs={0}></Grid>
       </SubGrid>
     </MainGrid >
   )

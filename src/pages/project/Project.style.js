@@ -29,8 +29,8 @@ export const ProjectCard = styled.div`
   position: relative;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 20px;
-  width: 350px;
-  height: 250px;
+  width: 21em;
+  height: 15em;
   overflow: hidden;
 `;
 

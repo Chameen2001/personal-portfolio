@@ -6,8 +6,6 @@ export const Wrapper = styled.div`
   font-family: "Roboto";
   color: #275064;
 
-  height: 100%;
-
   @media (max-width: 2560px) {
     /* width: 1980px; */
     font-size: 25px;
@@ -30,12 +28,12 @@ export const Wrapper = styled.div`
 
   @media (max-width: 1440px) {
     /* width: 1100px; */
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media (max-width: 1024px) {
     /* width: 860px; */
-    font-size: 13px;
+    font-size: 15px;
   }
 
   @media (max-width: 768px) {
@@ -56,14 +54,19 @@ export const Wrapper = styled.div`
     /* width: 650px; */
     font-size: 7px;
   }
+
+  /* Responsive Width and Height */
+  @media (min-width: 415px) and (max-height: 720px) {
+    /* width: 1980px; */
+    font-size: 13px;
+  }
+
 `;
 
 export const HomeBannerArea = styled.section`
   background-image: url(${backImg});
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-size: cover;
   height: 100vh;
 `;
